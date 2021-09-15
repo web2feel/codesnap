@@ -85,9 +85,8 @@ function Selector({ setMode }) {
   };
 
   return (
-    <div className="w-36">
+    <div className="w-full sm:w-40">
       <Select
-        //className="bg-red-600"
         value={selected}
         onChange={(option) => handleChange(option)}
         options={modeList}

@@ -4,7 +4,7 @@ function Switcher({ dark, setDark }) {
   return (
     <div
       onClick={() => setDark(!dark)}
-      className={`mr-4 border rounded border-white border-opacity-20 relative w-12 cursor-pointer overflow-hidden ${ dark ? 'bg-blueGray-900' : 'bg-blueGray-800'} `}
+      className={`border rounded border-white border-opacity-20 relative w-12 cursor-pointer overflow-hidden ${ dark ? 'bg-blueGray-900' : 'bg-blueGray-800'} `}
     >
       <div className={`inline-flex items-center h-full transform-gpu duration-200 ${dark ? '-ml-12' : 'ml-0'}`}>
         <div className="text-yellow-500 w-8 mx-2 flex items-center justify-center">

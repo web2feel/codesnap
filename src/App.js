@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Interface from "./components/Interface";
 function App() {
   return (
-    <div className="min-h-screen min-w-min bg-gradient-to-br from-blueGray-900 to-black">
+    <div className="min-h-screen bg-gradient-to-br from-blueGray-900 to-black">
       <Layout>
         <Header />
         <Main>

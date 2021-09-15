@@ -3,7 +3,7 @@ import React from "react";
 function Spacing({ spacing, setSpacing }) {
   return (
     <div
-      className=" mx-4 flex flex-col justify-center border rounded border-white border-opacity-20 px-3
+      className="flex flex-col justify-center border rounded border-white border-opacity-20 px-3
     "
     >
       <span
