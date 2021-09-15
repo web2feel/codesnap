@@ -1,0 +1,84 @@
+.CodeMirror{
+    background: transparent!important;  
+    font-size: 16px!important;
+  }
+  .CodeMirror-scroll {
+    padding-top: 16px!important;
+  }
+  
+  .editor_dark{
+    
+    .CodeMirror {
+      color: #d1c9c0 !important;
+      border: none;
+    }
+    
+    .CodeMirror-gutters {
+      color: #adaba6;
+      background-color: #E5E1DB;
+      border: none;
+    }
+     .CodeMirror-cursor { border-left: solid thin #609bf3; }//
+     .CodeMirror-linenumber { color: #adaba6; }
+     .CodeMirror-focused div.CodeMirror-selected { background: #353741; } //
+     .CodeMirror-line::selection,  .CodeMirror-line > span::selection,  .CodeMirror-line > span > span::selection { background: #DCD8D2; }
+     .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: #DCD8D2; }
+     span.cm-comment { color: #817b77; } //
+     span.cm-string,  span.cm-string-2 { color: #7eb86b; }//
+     span.cm-number { color: #eda54d; }//
+     span.cm-variable { color: #e2595c; } //
+     span.cm-variable-2 { color: #d8647a; }//
+     span.cm-def { color: #e2bb72; } //
+     span.cm-operator { color: #5195c3; }//
+     span.cm-keyword { color: #c678dd; } //
+     span.cm-atom { color: #eda54d; }//
+     span.cm-meta { color: #c8d8e4; }//
+     span.cm-tag { color: #e2595c; }//
+     span.cm-attribute { color: #eda54d; }//
+     span.cm-qualifier { color: #eda54d; }//
+     span.cm-property { color: #5195c3; }//
+     span.cm-builtin { color: #e2595c; } //
+     span.cm-variable-3,  span.cm-type { color: #d8647a; }//
+     .CodeMirror-activeline-background { background: #353741; }
+     .CodeMirror-matchingbracket { text-decoration: underline; }
+
+  }
+
+  .editor_lite{
+
+    .CodeMirror {
+      color: #484a4f !important;
+      border: none;
+    }
+    
+    .CodeMirror-gutters {
+      color: #adaba6;
+      background-color: #E5E1DB;
+      border: none;
+    }
+
+    .CodeMirror-cursor { border-left: solid thin #35242e; }//
+    .CodeMirror-linenumber { color: #464542; }
+    .CodeMirror-focused div.CodeMirror-selected { background: rgba(173, 180, 190, 0.351); } //
+    .CodeMirror-line::selection,  .CodeMirror-line > span::selection,  .CodeMirror-line > span > span::selection { background: #DCD8D2; }
+    .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: #DCD8D2; }
+    span.cm-comment { color: #77828e; } // m
+    span.cm-string,  span.cm-string-2 { color: #0ea51a; }// m
+    span.cm-number { color: #a55e08; }// m
+    span.cm-variable { color: #de181b; } // m
+    span.cm-variable-2 { color: #de0e57; }// m
+    span.cm-def { color: #1e4be1; } // m
+    span.cm-operator { color: #5195c3; }//
+    span.cm-keyword { color: #b00ad2; } // m
+    span.cm-atom { color: #e96b0a; }// m
+    span.cm-meta { color: #c8d8e4; }//
+    span.cm-tag { color: #e03e41; }//m
+    span.cm-attribute { color: #c67a09; }// m
+    span.cm-qualifier { color: #a55e08; }// m
+    span.cm-property { color: #0b74ac; }// m
+    span.cm-builtin { color: #e03e41; } //m
+    span.cm-variable-3,  span.cm-type { color: #da556e; }//m
+    .CodeMirror-activeline-background { background: #9297ac; }
+    .CodeMirror-matchingbracket { text-decoration: underline; }    
+
+  }

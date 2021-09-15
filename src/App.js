@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./styles/codemirror.scss"
+import "tailwindcss/tailwind.css";
+import Layout from "./components/Layout";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Interface from "./components/Interface";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen min-w-min bg-gradient-to-br from-blueGray-900 to-black">
+      <Layout>
+        <Header />
+        <Main>
+          <Interface />
+        </Main>
+        <Footer />
+      </Layout>
     </div>
   );
 }
