@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { set_title } from "../../store/Panel/PanelSlice";
 var sanitize = require("sanitize-filename");
 
 function EditorHeader() {
   const { title } = useSelector((state) => state.panel);
+  const [filename, setFilename] = useState(title)
+  const handleChange = (e) => {
+    setFilename(filename => filename = e.target.value)
+    dispatch(set_title({ title: sanitize(filename.split(".")[0]) }))
+  }
   const dispatch = useDispatch();
   return (
     <div className="flex justify-center relative">
@@ -33,8 +38,8 @@ function EditorHeader() {
       </div>
       <div className="py-2 title-box">
         <input
-          onChange={(e) => dispatch(set_title({ title: sanitize(e.target.value) }))}
-          value={title}
+          onChange={(e) => handleChange(e)}
+          value={filename}
           className="text-center text-gray-500 w-48 py-2 px-2 text-sm appearance-none bg-transparent border-none focus:border-transparent border-transparent focus:outline-none"
         />
       </div>
