@@ -2,10 +2,10 @@ input[type="range"]::-webkit-slider-thumb {
     width: 12px;
     -webkit-appearance: none;
       appearance: none;
-    height: 8px;
+    height: 16px;
     cursor: ew-resize;
     background: #eee;
-    box-shadow: -405px 0 0 400px rgba(255,255,255,0.2);
-    border-radius: 50%;
+    box-shadow: -405px 0 0 400px rgba(255,255,255,0.1);
+    border-radius: 3px;
     
 }

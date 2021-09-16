@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
+import { useDispatch } from "react-redux";
+import { set_mode } from "../../store/Panel/PanelSlice";
 let modes = [
   "Bash",
   "C++",
@@ -54,11 +56,13 @@ let modes = [
   "YAML",
 ];
 
-function Selector({ setMode }) {
+function Selector() {
+  const dispatch = useDispatch();
   const colourStyles = {
     control: (styles, state) => ({
       ...styles,
       backgroundColor: "transparent",
+      height:"40px",
       border: "1px solid rgba(255,255,255,0.2)",
       boxShadow: state.isFocused ? 0 : 0,
       "&:hover": {
@@ -81,7 +85,8 @@ function Selector({ setMode }) {
 
   const handleChange = (option) => {
     setSelected(option);
-    setMode(option.value);
+    //setMode(option.value);
+    dispatch(set_mode({mode:option.value}))
   };
 
   return (

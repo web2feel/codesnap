@@ -1,12 +1,22 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { set_dark } from "../../store/Panel/PanelSlice";
 
-function Switcher({ dark, setDark }) {
+function Switcher() {
+  const { dark } = useSelector((state) => state.panel);
+  const dispatch = useDispatch();
   return (
     <div
-      onClick={() => setDark(!dark)}
-      className={`border rounded border-white border-opacity-20 relative w-12 cursor-pointer overflow-hidden ${ dark ? 'bg-blueGray-900' : 'bg-blueGray-800'} `}
+      onClick={() => dispatch(set_dark())}
+      className={`border rounded border-white border-opacity-20 relative w-12 cursor-pointer overflow-hidden ${
+        dark ? "bg-blueGray-900" : "bg-blueGray-800"
+      } `}
     >
-      <div className={`inline-flex items-center h-full transform-gpu duration-200 ${dark ? '-ml-12' : 'ml-0'}`}>
+      <div
+        className={`inline-flex items-center h-full transform-gpu duration-200 ${
+          dark ? "-ml-12" : "ml-0"
+        }`}
+      >
         <div className="text-yellow-500 w-8 mx-2 flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

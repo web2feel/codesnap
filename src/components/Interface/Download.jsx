@@ -1,6 +1,7 @@
 import React from "react";
 
 function Download({ exportToPng, frame }) {
+  
   return (
     <button
       className="sm:ml-auto h-full bg-indigo-500 text-white rounded font-bold flex justify-center items-center px-2 ml-auto text-base"

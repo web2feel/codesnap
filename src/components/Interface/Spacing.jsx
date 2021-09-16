@@ -1,20 +1,17 @@
 import React from "react";
-
-function Spacing({ spacing, setSpacing }) {
+import { useSelector, useDispatch } from "react-redux";
+import { set_spacing } from "../../store/Panel/PanelSlice";
+function Spacing() {
+  const { spacing } = useSelector((state) => state.panel);
+  const dispatch = useDispatch();
   return (
     <div
       className="flex flex-col justify-center border rounded border-white border-opacity-20 px-3
     "
     >
-      <span
-        className="leading-tight mb-1 text-gray-400"
-        style={{ fontSize: "10px" }}
-      >
-        Spacing
-      </span>
       <input
-        className="rounded-lg overflow-hidden appearance-none bg-blueGray-900 h-2 w-20 border border-blueGray-600 block"
-        onChange={(e) => setSpacing(e.target.value)}
+        className="rounded overflow-hidden appearance-none bg-blueGray-900 h-4 w-20 border border-blueGray-600 block"
+        onChange={(e) => dispatch(set_spacing({ space: e.target.value }))}
         type="range"
         min="4"
         max="40"
