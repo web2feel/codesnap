@@ -4,7 +4,8 @@ const initialState = {
     scale:2 ,
     spacing: 16,
     dark:true,
-    title:'untitled'
+    title:'untitled',
+    copyAlert:false
 }
 const PanelSlice = createSlice({
     name:'panel',
@@ -21,9 +22,13 @@ const PanelSlice = createSlice({
         },
         set_mode: (state, action) => {
             state.mode = action.payload.mode
+        },
+        set_copyAlert : (state) => {
+            state.copyAlert = !state.copyAlert
         }
+
     }
 })
 
-export const {set_spacing, set_dark, set_title, set_mode} = PanelSlice.actions
+export const {set_spacing, set_dark, set_title, set_mode, set_copyAlert} = PanelSlice.actions
 export default PanelSlice.reducer
