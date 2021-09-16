@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { set_title } from "../../store/Panel/PanelSlice";
+var sanitize = require("sanitize-filename");
+
 function EditorHeader() {
   const { title } = useSelector((state) => state.panel);
   const dispatch = useDispatch();
@@ -31,7 +33,7 @@ function EditorHeader() {
       </div>
       <div className="py-2 title-box">
         <input
-          onChange={(e) => dispatch(set_title({ title: e.target.value }))}
+          onChange={(e) => dispatch(set_title({ title: sanitize(e.target.value) }))}
           value={title}
           className="text-center text-gray-500 w-48 py-2 px-2 text-sm appearance-none bg-transparent border-none focus:border-transparent border-transparent focus:outline-none"
         />

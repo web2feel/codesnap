@@ -4,7 +4,7 @@ function Footer() {
     <div className="py-12 text-center text-blueGray-500 text-sm">
       <p>
         Developed by Jinson Abraham | Find me on{" "}
-        <a className="hover:text-gray-200" rel="noreferrer" target="_blank" href="https://github.com/web2feel">
+        <a className="hover:text-gray-200" rel="noreferrer" target="_blank" href="https://github.com/web2feel/codesnap">
           Github
         </a>{" "}
       </p>
