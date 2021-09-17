@@ -49,10 +49,10 @@ function Frame() {
       <ControlPanel frame={frame} exportToPng={exportToPng} copyPic={copyPic} />
       <div
         ref={frame}
-        className={` bg-gradient-to-br from-rose-700 to-indigo-700 rounded-lg p-${spacing} transform duration-150`}
+        className={` bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg p-${spacing} transform duration-150`}
       >
         <div
-          className={`bg-opacity-90 rounded-lg shadow-lg ${
+          className={`bg-opacity-90 rounded-lg shadow-lg transform-gpu duration-300 ${
             dark ? "editor_dark bg-blueGray-900" : "editor_lite bg-white"
           }`}
         >

@@ -8,8 +8,8 @@ function Switcher() {
   return (
     <div
       onClick={() => dispatch(set_dark())}
-      className={`border rounded border-white border-opacity-20 relative w-12 cursor-pointer overflow-hidden ${
-        dark ? "bg-blueGray-900" : "bg-blueGray-800"
+      className={`border rounded border-white border-opacity-20 relative w-12 cursor-pointer overflow-hidden transform-gpu duration-300 ${
+        dark ? "bg-blueGray-900" : "bg-blueGray-800 "
       } `}
     >
       <div
@@ -17,7 +17,7 @@ function Switcher() {
           dark ? "-ml-12" : "ml-0"
         }`}
       >
-        <div className="text-yellow-500 w-8 mx-2 flex items-center justify-center">
+        <div className="text-yellow-500 w-8 mx-2 flex items-center justify-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

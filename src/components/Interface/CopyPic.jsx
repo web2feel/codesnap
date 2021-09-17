@@ -5,7 +5,7 @@ function CopyPic({ frame, copyPic }) {
 
   return (
     <div
-      className="relative ml-auto w-12 h-full bg-indigo-500 text-white rounded flex items-center justify-center cursor-pointer"
+      className="relative ml-auto w-12 h-full bg-blue-600  hover:bg-blue-500 transform duration-300 text-white rounded flex items-center justify-center cursor-pointer"
       onClick={() => copyPic(frame.current)}
     >
       <span

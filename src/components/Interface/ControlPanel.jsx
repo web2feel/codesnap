@@ -6,7 +6,7 @@ import Spacing from "./Spacing";
 import Switcher from "./Switcher";
 function ControlPanel({ frame, exportToPng, copyPic }) {
   return (
-    <div className="w-full p-2 mb-4 rounded-lg bg-blueGray-800 border border-blueGray-700 border-opacity-60 text-sm">
+    <div className="w-full p-2 mb-4 rounded-lg bg-blueGray-800 border border-blueGray-700 border-opacity-60 text-sm bg-opacity-40">
       <div className="flex flex-col sm:flex-row justify-start gap-y-2">
         <div>
           <Selector />

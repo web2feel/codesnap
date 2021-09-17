@@ -4,7 +4,7 @@ function Download({ exportToPng, frame }) {
   
   return (
     <button
-      className=" h-full bg-indigo-500 text-white rounded font-bold flex justify-center items-center px-2 text-base"
+      className=" h-full bg-blue-600 hover:bg-blue-500 transform duration-300  text-white rounded font-bold flex justify-center items-center px-2 text-base"
       onClick={() => exportToPng(frame.current)}
     >
       <svg
